@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Poiret+One&family=Smooch+Sans:wght@100&display=swap");
+body {
+  background-image: url(./macos-monterey-stock-blue-dark-mode-layers-5k-6016x6016-5895.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Poiret One', cursive;
+}
+
+.container {
+  width: 70%;
+  height: 70%;
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+p {
+  color: white;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.btn-col {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.Play-btn {
+  margin-top: 30px;
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  color: black;
+  border: 1px solid white;
+}
+
+.Play-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.scoreboard-cont {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid white;
+  width: 85%;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.img-fluid {
+  -webkit-animation: 0.5s popup forwards;
+          animation: 0.5s popup forwards;
+}
+
+.pick-element {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.pick-element:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@-webkit-keyframes popup {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.lose {
+  color: red;
+}
+
+.win {
+  color: green;
+}
+
+.draw {
+  color: orange;
+}
+
+.scoreboard {
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  width: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+h3,
+h4 {
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  margin: 0;
+}
+
+.img-fluid {
+  height: 120px;
+  border-radius: 50%;
+}
+
+.rock-paper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.rock-paper img,
+.scissors img {
+  cursor: pointer;
+}
+
+.scissors {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.score-num {
+  font-size: 50px;
+}
+
+.game {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.rules-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.play-ig {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=style.css.map */
