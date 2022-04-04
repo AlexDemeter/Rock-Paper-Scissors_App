@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poiret+One&family=Smooch+Sans:wght@100&display=swap');
+body{
+    background-image: url(./macos-monterey-stock-blue-dark-mode-layers-5k-6016x6016-5895.jpg);
+    background-attachment: fixed; 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Poiret One', cursive;
+}
+
+.container{
+    width: 70%;
+    height: 70%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    border-radius: 20px;
+}
+p{
+    color: white;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 20%;
+}
+.btn-col{
+    align-items: center;
+    text-align: center;
+}
+.Play-btn{
+    margin-top: 30px;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    color: black;
+    border: 1px solid white;
+}
+.Play-btn:hover{
+    background-color: black;
+    color: white;
+}
+.scoreboard-cont{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 85%;
+    margin: 30px auto;
+    padding: 20px;
+}
+.col.score-cont{
+    text-align: end;
+    justify-content: end;
+    display: grid;
+}
+.img-fluid{
+    animation: 0.5s popup forwards ;
+}
+.pick-element{
+    transition: 0.5s ease-in-out;
+}
+.pick-element:hover{
+    transform: scale(1.1)
+}
+@keyframes popup {
+    0%{
+        opacity: 0;
+    }
+    75%{
+        transform: scale(1.1)
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+.lose{
+    color: red;
+}
+.win{
+    color: green;
+}
+.draw{
+    color: orange;
+}
+.scoreboard{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+h3,
+h4{
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+h2{
+    color: white;
+    margin: 0;
+}
+.img-fluid{
+    height: 120px;
+    border-radius: 50%;
+}
+
+.rock-paper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.rock-paper img,
+.scissors img{
+    cursor: pointer;
+}
+.scissors{
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.score-num{
+    font-size: 50px;
+}
+.game {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+.rules-btn:hover{
+    background-color: white;
+    color: black;
+}
+.play-ig{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.game-phone{
+    visibility: hidden;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@media (max-width: 486px) {
+    .scoreboard-cont{
+        font-size: 10px;
+    }
+    .col.score-cont{
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .img-fluid{
+        width: 100px;
+        height: 100px;
+    }
+
+}
+@media (max-width: 615px) {
+    .game{
+        visibility: hidden;
+        position: absolute;
+    }
+    .game-phone{
+        visibility: visible;
+        position: absolute;
+    }
+    .container{
+        height: 90%;
+    }
+    h3{
+        font-size: 15px;
+    }
+}
